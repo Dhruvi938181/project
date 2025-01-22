@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /*header*/
+        
+        .nav {
+            .home {
+                background-color: #3d4936;
+                display: flex;
+                height: 60px;
+                justify-content: center;
+                gap: 40px;
+                padding-top: 20px;
+                font-size: 20px;
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: #cedcc6;
+                        gap: 40px;
+                    }
+                }
+            }
+            .div {
+                background-color: #cedcc6;
+                text-align: center;
+                padding-top: 200px;
+                color: #3d4936;
+                h4 {
+                    font-size: 30px;
+                }
+                h1 {
+                    font-size: 50px;
+                }
+                p {
+                    font-size: 20px;
+                    padding-left: 400px;
+                    padding-right: 400px;
+                }
+                .price {
+                    margin-top: 30px;
+                    font-size: 30px;
+                }
+                button {
+                    height: 50px;
+                    width: 160px;
+                    background-color: #3d4936;
+                    color: #cedcc6;
+                    font-size: 20px;
+                    border: none;
+                    margin-top: 20px;
+                }
+            }
+        }
+        /*scroll*/
+        
+        .scroll {
+            background-color: #3d4936;
+            display: flex;
+            height: 100px;
+            width: 2300px;
+            margin-left: 20px;
+            h1 {
+                padding-top: 30px;
+                padding-left: 50px;
+                color: white;
+            }
+            i {
+                margin-left: 10px;
+                margin-right: 20px;
+            }
+        }
+        /*boxes*/
+        
+        .main {
+            display: flex;
+            margin-top: 70px;
+            color: #3d4936;
+            gap: 30px;
+            .b1 {
+                border: 2px solid;
+                width: 300px;
+                height: 200px;
+                text-align: center;
+                padding: 30px;
+                i {
+                    font-size: 80px;
+                }
+                h1 {
+                    margin-top: 30px;
+                    font-size: 25px;
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 20px;
+                }
+            }
+            .b2 {
+                border: 2px solid;
+                width: 300px;
+                height: 280px;
+                text-align: center;
+                padding: 30px;
+                i {
+                    font-size: 80px;
+                }
+                h1 {
+                    margin-top: 30px;
+                    font-size: 25px;
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 20px;
+                }
+            }
+            .b3 {
+                border: 2px solid;
+                width: 300px;
+                height: 280px;
+                text-align: center;
+                padding: 30px;
+                i {
+                    font-size: 80px;
+                }
+                h1 {
+                    margin-top: 30px;
+                    font-size: 25px;
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 20px;
+                }
+            }
+            .b4 {
+                border: 2px solid;
+                width: 300px;
+                height: 280px;
+                text-align: center;
+                padding: 30px;
+                i {
+                    font-size: 80px;
+                }
+                h1 {
+                    margin-top: 30px;
+                    font-size: 25px;
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+        /*product*/
+        
+        .product {
+            background-color: #cedcc6;
+            padding-bottom: 100px;
+            color: #3d4936;
+            text-align: center;
+            .pro {
+                text-align: center;
+                padding: 30px;
+                p {
+                    text-transform: uppercase;
+                    padding-top: 30px;
+                }
+            }
+            .soap1 {
+                background-color: white;
+                display: inline-block;
+                height: 300px;
+                text-align: center;
+                h1 {
+                    width: 250px;
+                    text-align: center;
+                    margin-left: 20px;
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                i {
+                    margin-top: 10px;
+                }
+            }
+            .soap2 {
+                background-color: white;
+                display: inline-block;
+                margin-left: 30px;
+                height: 300px;
+                text-align: center;
+                h1 {
+                    width: 250px;
+                    text-align: center;
+                    margin-left: 20px;
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                i {
+                    margin-top: 10px;
+                }
+            }
+            .soap3 {
+                background-color: white;
+                display: inline-block;
+                margin-left: 30px;
+                height: 300px;
+                text-align: center;
+                h1 {
+                    width: 250px;
+                    text-align: center;
+                    margin-left: 20px;
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                i {
+                    margin-top: 10px;
+                }
+            }
+            .soap4 {
+                background-color: white;
+                display: inline-block;
+                margin-left: 30px;
+                height: 300px;
+                text-align: center;
+                h1 {
+                    width: 250px;
+                    text-align: center;
+                    margin-left: 20px;
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                i {
+                    margin-top: 10px;
+                }
+            }
+        }
+        /*images*/
+        
+        .main1 {
+            color: #3d4936;
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-evenly;
+            .img2 {
+                margin-left: 20px;
+                margin-top: 200px;
+                gap: 50px;
+            }
+            .text {
+                width: 600px;
+                margin-top: 40px;
+                h4 {
+                    margin-left: 50px;
+                }
+                h1 {
+                    margin-left: 50px;
+                    font-size: 40px;
+                }
+                p {
+                    margin-left: 50px;
+                    margin-top: 30px;
+                }
+                .box {
+                    .t1 {
+                        display: inline-block;
+                        margin-top: 20px;
+                        margin-left: 50px;
+                        p {
+                            margin-top: 0;
+                            margin-left: 0;
+                        }
+                        h1 {
+                            margin-left: 0px;
+                        }
+                    }
+                    .t2 {
+                        display: inline-block;
+                        margin-left: 150px;
+                        margin-top: 20px;
+                        p {
+                            margin-top: 0;
+                            margin-left: 0;
+                        }
+                        h1 {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+                .box1 {
+                    .t3 {
+                        display: inline-block;
+                        margin-top: 20px;
+                        margin-left: 50px;
+                        p {
+                            margin-top: 0;
+                            margin-left: 0;
+                        }
+                        h1 {
+                            margin-left: 0px;
+                        }
+                    }
+                    .t4 {
+                        display: inline-block;
+                        margin-left: 150px;
+                        margin-top: 20px;
+                        p {
+                            margin-top: 0;
+                            margin-left: 0;
+                        }
+                        h1 {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+            button {
+                background-color: #3d4936;
+                color: white;
+                height: 50px;
+                width: 200px;
+                border: none;
+                margin-left: 50px;
+                margin-top: 30px;
+            }
+        }
+        
+        .bts {
+            background-color: #3d4936;
+            margin-top: 100px;
+            .bts1 {
+                display: inline-block;
+                .sam {
+                    display: inline-block;
+                    color: white;
+                    margin-left: 20px;
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                    font-size: 17px;
+                    p {
+                        font-size: 30px;
+                    }
+                }
+                .truck {
+                    display: inline-block;
+                    color: white;
+                    font-size: 50px;
+                    margin-left: 100px;
+                }
+            }
+            .bts2 {
+                display: inline-block;
+                .sam {
+                    display: inline-block;
+                    color: white;
+                    margin-left: 20px;
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                    font-size: 17px;
+                    p {
+                        font-size: 30px;
+                    }
+                }
+                .truck {
+                    display: inline-block;
+                    color: white;
+                    font-size: 50px;
+                    margin-left: 100px;
+                }
+            }
+            .bts3 {
+                display: inline-block;
+                .sam {
+                    display: inline-block;
+                    color: white;
+                    margin-left: 20px;
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                    font-size: 17px;
+                    p {
+                        font-size: 30px;
+                    }
+                }
+                .truck {
+                    display: inline-block;
+                    color: white;
+                    font-size: 50px;
+                    margin-left: 100px;
+                }
+            }
+        }
+        /*footer*/
+        
+        footer {
+            color: #3d4936;
+            background-color: #cedcc6;
+            display: flex;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            justify-content: space-evenly;
+            .f {
+                text-align: center;
+                h1 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 17px;
+                    letter-spacing: 2px;
+                }
+                h2 {
+                    margin-top: 20px;
+                    font-size: 30px;
+                }
+                .call {
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+                .call1 {
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+            }
+            .f1 {
+                padding-left: 50px;
+                line-height: 40px;
+                font-size: 17px;
+            }
+            .f2 {
+                padding-left: 50px;
+                line-height: 40px;
+                font-size: 17px;
+            }
+            .f3 {
+                padding-left: 50px;
+                line-height: 40px;
+                font-size: 17px;
+            }
+            .f4 {
+                padding-left: 50px;
+                width: 400px;
+                p {
+                    margin-top: 10px;
+                }
+                input {
+                    height: 40px;
+                    width: 300px;
+                    margin-top: 10px;
+                    margin-left: 0px;
+                }
+                h4 {
+                    font-size: 25px;
+                    margin-top: 20px;
+                }
+                i {
+                    font-size: 30px;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    border: 2px solid;
+                    padding: 7px;
+                }
+            }
+        }
+        
+        .foot {
+            background-color: #cedcc6;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 22px;
+            color: #3d4936;
+        }
+        
+        @media screen and (min-width:480px) {
+            .nav {
+                .home {
+                    font-size: 18px;
+                }
+                .div {
+                    padding-top: 150px;
+                    padding-bottom: 150px;
+                    p {
+                        padding-left: 120px;
+                        padding-right: 120px;
+                        font-size: 30px;
+                    }
+                }
+            }
+            .main {
+                flex-wrap: wrap;
+                justify-content: center;
+                .b1 {
+                    margin-top: 10px;
+                    margin-left: 0;
+                    height: 300px;
+                    width: 350px;
+                }
+                .b2 {
+                    margin-top: 10px;
+                    margin-left: 0;
+                    height: 300px;
+                    width: 350px;
+                }
+                .b3 {
+                    margin-top: 10px;
+                    margin-left: 0;
+                    height: 300px;
+                    width: 350px;
+                }
+                .b4 {
+                    margin-top: 10px;
+                    margin-left: 0;
+                    height: 300px;
+                    width: 350px;
+                }
+            }
+            .p1 {
+                height: 500px;
+                width: 350px;
+                p {
+                    text-align: center;
+                }
+                h1 {
+                    text-align: center;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+            .p2 {
+                .i1 {
+                    height: 500px;
+                    width: 350px;
+                    h1 {
+                        text-align: center;
+                    }
+                }
+                .i2 {
+                    height: 500px;
+                    width: 350px;
+                }
+            }
+        }
+        
+        .img {
+            flex-wrap: wrap;
+            .p1 {
+                margin-left: 60px;
+                height: 700px;
+                width: 450px;
+            }
+        }
+        
+        .product {
+            flex-wrap: wrap;
+            margin-top: 130px;
+            .soap1 {
+                justify-content: center;
+                margin-left: 0;
+                margin-top: 30px;
+            }
+            .soap2 {
+                justify-content: center;
+                margin-left: 0;
+                margin-top: 30px;
+            }
+            .soap3 {
+                justify-content: center;
+                margin-left: 0;
+                margin-top: 30px;
+            }
+            .soap4 {
+                justify-content: center;
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+        
+        .main1 {
+            flex-wrap: wrap;
+            justify-content: center;
+            .img2 {
+                text-align: center;
+            }
+            .text {
+                text-align: center;
+            }
+        }
+        
+        footer {
+            flex-wrap: wrap;
+            .f {
+                padding-top: 20px;
+            }
+            .f1 {
+                padding-left: 30px;
+                padding-top: 20px;
+            }
+            .f2 {
+                padding-left: 30px;
+                padding-top: 20px;
+            }
+            .f3 {
+                padding-left: 30px;
+                padding-top: 20px;
+            }
+            .f4 {
+                padding-left: 30px;
+                padding-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+
+            <ul class="home">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">CONTACT US</a></li>
+
+            </ul>
+
+
+
+            <div class="div">
+                <H4>GREEN GOODNESS</H4>
+                <H1>Plant-Based Soaps</H1>
+                <p>Mattis rhoncus neque viverra justo ultrices.Non quis varius quisque id.Scelerisque varius morbi nunc faucibus.Risus ultriciestristique nulla aliquet enim tortor.</p>
+                <p class="price"><del>₹24.000</del> ₹20.000</p>
+                <button>BUY NOW - ₹20</button>
+
+            </div>
+
+
+        </div>
+    </header>
+    <marquee scrollamount="40" loop="infinite" scrolldelay="0">
+        <div class="scroll">
+            <h1><i class="fas fa-mortar-pestle"></i>prevent dryness</h1>
+            <h1><i class="fab fa-pagelines"></i>eco-friendly ingridients</h1>
+            <h1><i class="fas fa-leaf"></i>support skin health</h1>
+            <h1><i class="fab fa-canadian-maple-leaf"></i>radient skin secret</h1>
+            <h1><i class="fab fa-pagelines"></i>promotes skin repair</h1>
+            <h1><i class="fas fa-mortar-pestle"></i>no perabin & sulfates</h1>
+        </div>
+    </marquee>
+    <div class="main">
+        <div class="b1">
+            <i class="fas fa-mortar-pestle"></i>
+            <h1>Pure Ingredients</h1>
+            <p>Tortor laoreet sagittis gravida fermentum tellus penatibus natoque.</p>
+        </div>
+        <div class="b2">
+            <i class="fab fa-pagelines"></i>
+            <h1>Chemical-Free Formula</h1>
+            <P>Nulla sed fusce penatibus praesent dis ut et orci curae. Euismod egestas.</P>
+        </div>
+        <div class="b3">
+            <i class="fas fa-syringe"></i>
+            <h1>Preservative-Free</h1>
+            <P>Ultrices sociosqu nostra potenti lobortis quisque pharetra pulvinar</P>
+        </div>
+        <div class="b4">
+            <i class="fab fa-canadian-maple-leaf"></i>
+            <h1>Paraben-Less</h1>
+            <P>Euismod fermentum gravida tempus pellentesque inceptos aenean.</P>
+        </div>
+    </div>
+
+
+    </div>
+    <div class="product">
+        <div class="pro">
+            <p>Special For Members</p>
+            <h1>Clearance Sale</h1>
+        </div>
+
+        <div class="soap1">
+            <img height="300" width="300" src="https://jabon.wpengine.com/wp-content/uploads/2024/09/shop-2-02.png" alt="">
+            <h1>Green Aloe Vera Soap</h1>
+            <p>₹130.00 – ₹165.00</p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <div class="soap2">
+            <img height="300" width="300" src="https://jabon.wpengine.com/wp-content/uploads/2024/09/shop-9-04.png">
+            <h1>Herbal Neem Soap</h1>
+            <p>₹120.00 – ₹185.00</p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <div class="soap3">
+            <img height="300" width="300" src="https://jabon.wpengine.com/wp-content/uploads/2024/09/shop-7-04.png">
+            <h1>Cucumber Soap</h1>
+            <p>₹18.00</p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+
+        <div class="soap4">
+            <img height="300" width="300" src="https://jabon.wpengine.com/wp-content/uploads/2024/09/shop-3-02.png">
+            <h1>Natural Bar Soap</h1>
+            <p>₹100.00 – ₹125.00</p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+    <div class="main1">
+        <div class="img1">
+            <img height="500" src="https://jabon.wpengine.com/wp-content/uploads/2024/08/Demo-2-Grid-Anim-Image-1.jpg" alt="" data-aos="fade-up">
+            <script>
+                AOS.init();
+            </script>
+        </div>
+        <div class="img2">
+            <img height="300" src="https://jabon.wpengine.com/wp-content/uploads/2024/08/Demo-2-Grid-Anim-Image-2.jpg" alt="" data-aos="fade-down">
+        </div>
+        <div class="text">
+            <h4>MAINTAIN QUALITY</h4>
+            <h1>Commit To Innovation</h1>
+            <p>Curabitur aenean velit euismod sociosqu consequat eleifend sapien. Accumsan porttitor integer fames porta finibus. Aliquam orci finibus curae senectus quam lacus vehicula aliquet vestibulum aptent adipiscing.</p>
+            <div class="box">
+                <div class="t1">
+                    <h1>8500K</h1>
+                    <p>Product Sold</p>
+                </div>
+                <div class="t2">
+                    <h1>99.99%</h1>
+                    <p>Pure Formula</p>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="t3">
+                    <h1>99K</h1>
+                    <p>Happy Customer</p>
+                </div>
+                <div class="t4">
+                    <h1>48+</h1>
+                    <p>Corporate Products</p>
+                </div>
+            </div>
+            <button>EXPLORE MORE</button>
+        </div>
+    </div>
+    <div class="product">
+        <div class="pro">
+            <p>PRO'S FAVORITE</p>
+            <h1>Hot Selling Soaps</h1>
+        </div>
+
+        <div class="soap1">
+            <img height="300" width="300" src="https://jabon.wpengine.com/wp-content/uploads/2024/09/shop-6-02.png" alt="">
+            <h1>Herbal Green Soap</h1>
+            <p>₹130.00 – ₹165.00</p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <div class="soap2">
+            <img height="300" width="300" src="https://jabon.wpengine.com/wp-content/uploads/2024/09/shop-4-02.png">
+            <h1> Mixed Herbal Soap</h1>
+            <p>₹120.00 – ₹185.00</p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <div class="soap3">
+            <img height="300" width="300" src="https://jabon.wpengine.com/wp-content/uploads/2024/09/shop-8-04.png">
+            <h1>Organic Rose Soap</h1>
+            <p>₹18.00</p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+
+        <div class="soap4">
+            <img height="300" width="300" src="https://jabon.wpengine.com/wp-content/uploads/2024/09/shop-5-02.png">
+            <h1>Sandal Wood Soap</h1>
+            <p>₹100.00 – ₹125.00</p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+    <div class="bts">
+        <div class="bts1">
+            <div class="truck">
+                <i class="fas fa-truck"></i>
+            </div>
+            <div class="sam">
+                <h4>SAME DAY DELIVERY</h4>
+                <P>Free Shipping Over 20</P>
+            </div>
+        </div>
+        <div class="bts2">
+            <div class="truck">
+                <i class="fas fa-truck"></i>
+            </div>
+            <div class="sam">
+                <h4>INTERNATIONAL</h4>
+                <P>Delivery 2-4 days</P>
+            </div>
+        </div>
+        <div class="bts3">
+            <div class="truck">
+                <i class="fas fa-truck"></i>
+            </div>
+            <div class="sam">
+                <h4>HIGHTY RATED</h4>
+                <P>Rated 4.8 On Trustpilot</P>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="f">
+            <h1>JABON</h1>
+            <p>HANDMADE SOAP</p>
+            <h2>Get Touch With Us</h2>
+            <p class="call"><i class="fas fa-phone-alt"></i> +00-123-456-789</p>
+            <p class="call1"><i class="fas fa-envelope"></i> support@example.com</p>
+        </div>
+        <div class="f1">
+            <h1>Information</h1>
+            <p>Company Overview</p>
+            <p>Investors</p>
+            <p>Store Directory</p>
+            <p>Returns & Refunds</p>
+            <!-- <p>Contact Us</p> -->
+        </div>
+        <div class="f2">
+            <h1>Orders</h1>
+            <p>Delivery Informain</p>
+            <p>Your Account</p>
+            <p>App Download</p>
+            <p>Track Order</p>
+            <!-- <p>Cancellation</p> -->
+        </div>
+        <div class="f3">
+            <h1>Quick Links</h1>
+            <p>Shipping Policy</p>
+            <p>Terms Of Use</p>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div class="f4">
+            <h1>Get Our Newsletter</h1>
+            <p>Signup for our newsletter to stay up to date on sales and events.</p>
+
+            <div class="email">
+                <input type="text " placeholder="Enter Your Email">
+            </div>
+            <h4>Social Links</h4>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook-square"></i>
+        </div>
+
+    </footer>
+    <hr>
+    <p class="foot">© 2024 Jabon Soap woocommerce Theme</p>
+</body>
+
+</html>
